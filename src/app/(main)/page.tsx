@@ -1,3 +1,4 @@
+import TaskCard from "@/components/TaskCard/TaskCard";
 import Image from "next/image";
 import Link from "next/link";
 import { MdAddTask } from "react-icons/md";
@@ -15,7 +16,9 @@ export default function MainPage() {
           <div>Add Task</div>
         </Link>
       </header>
-      <div className="mt-8 flex flex-wrap gap-4">Task Card</div>
+      <div className="mt-8 flex flex-wrap gap-4">
+        <TaskCard />
+      </div>
     </div>
   );
 }
